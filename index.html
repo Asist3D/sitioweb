@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda en Línea</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Mi Tienda Remache</h1>
+            <!-- Barra de búsqueda -->
+            <div class="search-bar">
+                <input type="text" class="search-input" placeholder="Buscar...">
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+            <!-- Fin de la barra de búsqueda -->
+            <!-- Botones de redes sociales en el encabezado -->
+            <div class="social-buttons">
+                <a href="#" class="social-button facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="social-button twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="social-button pinterest">
+                    <i class="fab fa-pinterest"></i>
+                </a>
+                <a href="#" class="social-button instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <!-- Fin de botones de redes sociales en el encabezado -->
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="container">
+            <h2 class="hero-title orange">¡Bienvenido a Mi Tienda Don Remache!</h2>
+            <p class="hero-text">Descubre nuestras increíbles ofertas en una amplia variedad de productos.</p>
+            <a href="#productos" class="btn btn-primary">Ver productos</a>
+        </div>
+    </section>
+
+    <section id="productos" class="featured-products">
+        <div class="container">
+            <h2 class="section-title">Productos Destacados</h2>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="C:\Users\JORDAN REMACHE\Desktop\Nueva carpeta\FAMILIAS REVIT.jpg" alt="Familias revit avanzadas" width="200" height="150">
+                    <h3 class="product-title">carros</h3>
+                    <p class="product-price">$4.99</p>
+                    <a href="#" class="btn btn-secondary">Agregar al carrito</a>
+                </div>
+                <div class="product">
+                    <img src="C:\Users\JORDAN REMACHE\Desktop\Nueva carpeta\FAMILIAS REVIT 2.jpg" alt="Familias revit avanzadas 2" width="200" height="150">
+                    <h3 class="product-title">personas</h3>
+                    <p class="product-price">$6.99</p>
+                    <a href="#" class="btn btn-secondary">Agregar al carrito</a>
+                </div>
+                <div class="product">
+                    <img src="C:\Users\JORDAN REMACHE\Desktop\Nueva carpeta\FAMILIAS REVIT 2.jpg" alt="Familias revit avanzadas 2" width="200" height="150">
+                    <h3 class="product-title">animales</h3>
+                    <p class="product-price">$6.99</p>
+                    <a href="#" class="btn btn-secondary">Agregar al carrito</a>
+                </div>
+                <div class="product">
+                    <img src="C:\Users\JORDAN REMACHE\Desktop\Nueva carpeta\FAMILIAS REVIT 2.jpg" alt="Familias revit avanzadas 2" width="200" height="150">
+                    <h3 class="product-title">arboles</h3>
+                    <p class="product-price">$6.99</p>
+                    <a href="#" class="btn btn-secondary">Agregar al carrito</a>
+                </div>
+                <div class="product">
+                    <img src="C:\Users\JORDAN REMACHE\Desktop\Nueva carpeta\FAMILIAS REVIT 2.jpg" alt="Familias revit avanzadas 2" width="200" height="150">
+                    <h3 class="product-title">objetos</h3>
+                    <p class="product-price">$6.99</p>
+                    <a href="#" class="btn btn-secondary">Agregar al carrito</a>
+                </div>
+                <div class="product">
+                    <img src="C:\Users\JORDAN REMACHE\Desktop\Nueva carpeta\FAMILIAS REVIT 2.jpg" alt="Familias revit avanzadas 2" width="200" height="150">
+                    <h3 class="product-title">viviendas</h3>
+                    <p class="product-price">$6.99</p>
+                    <a href="#" class="btn btn-secondary">Agregar al carrito</a>
+                </div>
+                <div class="product">
+                    <img src="C:\Users\JORDAN REMACHE\Desktop\Nueva carpeta\FAMILIAS REVIT 2.jpg" alt="Familias revit avanzadas 2" width="200" height="150">
+                    <h3 class="product-title">texturas</h3>
+                    <p class="product-price">$6.99</p>
+                    <a href="#" class="btn btn-secondary">Agregar al carrito</a>
+                </div>
+                <!-- Repite este bloque para más productos -->
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contacto</h2>
+            <!-- Contenido de la sección de contacto -->
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">&copy; 2024 Mi Tienda. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Script de JavaScript para la búsqueda de productos -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const searchInput = document.querySelector(".search-input");
+            const products = document.querySelectorAll(".product");
+
+            searchInput.addEventListener("input", function() {
+                const searchTerm = searchInput.value.trim().toLowerCase();
+
+                products.forEach(function(product) {
+                    const title = product.querySelector(".product-title").textContent.toLowerCase();
+                    if (title.includes(searchTerm)) {
+                        product.style.display = "block";
+                    } else {
+                        product.style.display = "none";
+                    }
+                });
+            });
+        });
+    </script>
+
+    <!-- Botón para ver el carrito -->
+    <button id="ver-carrito">Ver carrito</button>
+
+</body>
+</html>

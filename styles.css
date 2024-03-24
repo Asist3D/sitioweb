@@ -1,0 +1,136 @@
+/* Estilos para el encabezado */
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0; /* Reduciendo el relleno superior e inferior */
+    width: 100%; /* Ajustando el ancho del encabezado al 100% del viewport */
+    z-index: 1000; /* Ajustando el z-index para que esté por encima de otros elementos */
+}
+
+.container {
+    width: 90%; /* Limitando el ancho del contenido del encabezado */
+    margin: 0 auto; /* Centrando el contenido horizontalmente */
+}
+
+.logo {
+    margin: 0;
+    font-size: 24px;
+}
+
+.main-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.main-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.main-nav ul li a:hover {
+    color: #ccc;
+}
+
+/* Estilos para la sección del héroe */
+.hero {
+    background-image: url('hero-background.jpg');
+    background-size: cover;
+    text-align: center;
+    padding: 10% 0; /* Utilizando porcentajes para el padding */
+}
+
+.hero-title {
+    margin-top: 0;
+    font-size: 3rem; /* Utilizando rem para el tamaño de fuente */
+}
+
+.hero-text {
+    font-size: 1.5rem; /* Utilizando rem para el tamaño de fuente */
+    margin-bottom: 2rem; /* Utilizando rem para el tamaño del margen inferior */
+}
+
+/* Estilos para los botones */
+.btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 1rem 2rem; /* Utilizando rem para el tamaño del padding */
+    text-decoration: none;
+    border-radius: 0.5rem; /* Utilizando rem para el radio de borde */
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Color naranja */
+.orange {
+    color: #ffa500; /* Texto naranja */
+}
+
+/* Estilos para los productos */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Las columnas se ajustarán automáticamente */
+    gap: 20px;
+}
+
+.product {
+    /* Estilos para cada producto */
+}
+
+/* Estilos para los botones de redes sociales */
+.social-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Alineando los iconos de redes sociales a la derecha */
+    margin-right: 20px; /* Agregando un margen derecho */
+}
+
+.social-button {
+    color: #fff;
+    font-size: 20px;
+    margin-left: 10px; /* Agregando un margen izquierdo */
+    text-decoration: none;
+}
+
+.social-button:hover {
+    color: #007bff;
+}
+
+/* Estilos para la barra de búsqueda */
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Mueve la barra de búsqueda hacia la derecha */
+}
+
+.search-input {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.search-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-btn:hover {
+    background-color: #0056b3;
+}
+
